@@ -33,6 +33,7 @@ $(function () {//$(".swiper-wrapper").animate({ "marginLeft": "-="+800 }//끊임
         count %= $('.swiper-slide').length;
 
         $(".swiper-slide").eq(count).addClass("active").siblings().removeClass("active");
+        // $(".swiper-slide").eq(count) == document.querySelectorAll(".swiper-slide")[count]
 
     }, 2000)
 

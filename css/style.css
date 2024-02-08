@@ -155,3 +155,7 @@ ul.d2 {
 .swiper-slide.active {
     opacity: 1;
 }
+
+.fbox>ul>li {
+    margin-left: 10px;
+}
