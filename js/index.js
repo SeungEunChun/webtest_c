@@ -7,3 +7,9 @@ document.querySelector("#popup button").addEventListener('click', function () {
 });
 
 
+$(function () {
+    $(".swiper-wrapper").animate({ "marginLeft": -800 }, 800, function () {
+
+    })
+    // $("body").addClass("c")//jquery 손상여부 확인
+})  

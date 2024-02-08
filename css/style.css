@@ -106,8 +106,21 @@ a:hover {
 
 }
 
+#gnb>li>a {
+    font-size: 2em;
+    font-weight: bold;
+    line-height: 2;
+}
+
 header {
+    padding: 2rem 0;
     border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+#gnb {
+    text-indent: 3rem;
+
 }
 
 ul#gnb,
@@ -115,7 +128,16 @@ ul.d2 {
     padding: 0;
 }
 
-/* ul.d2 {
-    height: 0;
+#gnb ul.d2 {
+    max-height: 0;
     overflow: hidden;
-} */
+    transition: .5s;
+}
+
+#gnb>li:hover>a {
+    color: red;
+}
+
+#gnb li:hover ul.d2 {
+    max-height: 300px;
+}
