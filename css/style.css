@@ -141,3 +141,17 @@ ul.d2 {
 #gnb li:hover ul.d2 {
     max-height: 300px;
 }
+
+
+/* effectfade */
+.swiper-slide {
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    transition: 1s;
+}
+
+.swiper-slide.active {
+    opacity: 1;
+}
