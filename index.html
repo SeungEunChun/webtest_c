@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C형</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script defer src="./js/index.js"></script>
+    <!-- defer 속성으로 스크립트를 무조건 다 읽어들이게 함 -->
+</head>
+
+<body>
+    <!-- 
+.container.rel.d-flex>header.w200+.content.w800
+-->
+    <!-- 
+*header   h1>a.d-block[href=#none]>img.d-block[alt="로고"]^^ul#gnb>li*4>a.d-block[href=#none]+ul.d2>li*4>a.d-block[href=#none]
+-->
+    <!-- 
+*content
+.swiper+.threeTab.d-flex.h200+footer.d-flex.h100
+-->
+    <!-- 
+*swiper
+.swiper.h350>.swiper+wrapper>swiper-slide*3>img   // 이미지는 800 * 350
+-->
+    <!-- 
+*threeTab
+.boardtab.w33+.imgbanner.w33>a>img^^.linkbanner.w33>a>img
+-->
+    <!-- 
+*footer
+h3>img^.fbox>ul.d-flex>li*4>a.d-block{하단메뉴}^^div{copyright}
+-->
+
+    <div class="container rel d-flex">
+        <header class="w200">
+            <h1><a href="#none" class="d-block"><img src="" alt="로고"></a></h1>
+            <ul id="gnb">
+                <li>
+                    <a href="#none" class="d-block">MENU-1</a>
+                    <ul class="d2">
+                        <li><a href="#none" class="d-block">소메뉴</a></li>
+                        <li><a href="#none" class="d-block">소메뉴</a></li>
+                        <li><a href="#none" class="d-block">소메뉴</a></li>
+                        <li><a href="#none" class="d-block">소메뉴</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#none" class="d-block">MENU-2</a>
+                    <ul class="d2">
+                        <li><a href="#none" class="d-block">소메뉴</a></li>
+                        <li><a href="#none" class="d-block">소메뉴</a></li>
+                        <li><a href="#none" class="d-block">소메뉴</a></li>
+                        <li><a href="#none" class="d-block">소메뉴</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#none" class="d-block">MENU-3</a>
+                    <ul class="d2">
+                        <li><a href="#none" class="d-block">소메뉴</a></li>
+                        <li><a href="#none" class="d-block">소메뉴</a></li>
+                        <li><a href="#none" class="d-block">소메뉴</a></li>
+                        <li><a href="#none" class="d-block">소메뉴</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#none" class="d-block">MENU-4</a>
+                    <ul class="d2">
+                        <li><a href="#none" class="d-block">소메뉴</a></li>
+                        <li><a href="#none" class="d-block">소메뉴</a></li>
+                        <li><a href="#none" class="d-block">소메뉴</a></li>
+                        <li><a href="#none" class="d-block">소메뉴</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </header>
+        <div class="content w800">
+
+        </div>
+        <div id="popup" class="abs">
+            <p>컨테이너의 정 가운데</p>
+            <button>닫기</button>
+        </div>
+    </div>
+</body>
+
+</html>
